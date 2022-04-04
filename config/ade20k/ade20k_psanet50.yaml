@@ -49,7 +49,7 @@ Distributed:
   rank: 0
 
 TEST:
-  test_list: dataset/ade20k/list/validation.txt
+  test_list: semseg/dataset/list/ade20k/validation.txt
   split: val  # split in [train, val and test]
   base_size: 512  # based size for scaling
   test_h: 465
@@ -59,7 +59,7 @@ TEST:
   index_start: 0  # evaluation start index in list
   index_step: 0  # evaluation step index in list, 0 means to end
   test_gpu: [0]
-  model_path: exp/ade20k/psanet50/model/train_epoch_100.pth  # evaluation model path
-  save_folder: exp/ade20k/psanet50/result/epoch_100/val/ss  # results save folder
-  colors_path: data/ade20k/ade20k_colors.txt  # path of dataset colors
-  names_path: data/ade20k/ade20k_names.txt  # path of dataset category names
+  model_path: semseg/exp/ade20k/psanet50/model/train_epoch_100.pth  # evaluation model path
+  save_folder: semseg/exp/ade20k/psanet50/result/epoch_100/val/ss  # results save folder
+  colors_path: semseg/data/ade20k/ade20k_colors.txt  # path of dataset colors
+  names_path: semseg/data/ade20k/ade20k_names.txt  # path of dataset category names
